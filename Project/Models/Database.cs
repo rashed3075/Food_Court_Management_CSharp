@@ -15,9 +15,9 @@ namespace Project.Models
         public Restaurants Restaurants { get; set; }
         public Database()
         {
-            //string Nijhum = @"LAPTOP-2U5ORHDR\SQLEXPRESS1;Database=Project;User Id=sa;Password=database;";
-            string Rabby = @"Server=RABBY-PC\SQLEXPRESS;Database=Project;User Id=sa;Password=1234;";
-            SqlConnection conn = new SqlConnection(Rabby);
+            string Nijhum = @"Server=LAPTOP-2U5ORHDR\SQLEXPRESS1;Database=Project;User Id=sa;Password=database;";
+            //string Rabby = @"Server=RABBY-PC\SQLEXPRESS;Database=Project;User Id=sa;Password=1234;";
+            SqlConnection conn = new SqlConnection(Nijhum);
             Admins = new Admins(conn);
             Customers = new Customers(conn);
             Employees = new Employees(conn);
