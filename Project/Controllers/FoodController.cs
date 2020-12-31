@@ -36,9 +36,9 @@ namespace Project.Controllers
             f.Price = food.Price;
             return db.Foods.UpdateFood(f);
         }
-        public static ArrayList GetAllFood()
+        public static ArrayList GetAllFood(string id)
         {
-            return db.Foods.GetAllFood();
+            return db.Foods.GetAllFood(id);
         }
 
     }

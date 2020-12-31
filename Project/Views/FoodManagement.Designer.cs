@@ -99,6 +99,7 @@
             this.button4.TabIndex = 15;
             this.button4.Text = "Show All Food\r\n";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.ShowClicked);
             // 
             // FoodManagement
             // 

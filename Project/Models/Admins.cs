@@ -55,7 +55,7 @@ namespace Project.Models
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
-            {
+            {  
 
                 Admin admin = new Admin();
                 admin.Id = reader.GetString(reader.GetOrdinal("Id"));

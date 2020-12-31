@@ -69,11 +69,11 @@ namespace Project.Models
             if (r > 0) return true;
             return false;
         }
-        public ArrayList GetAllFood()
+        public ArrayList GetAllFood(string id)
         {
             ArrayList foods = new ArrayList();
             conn.Open();
-            string query = "Select FoodItem.*,Restaurant.Name FROM FoodItem,Restaurant";
+            string query = String.Format("SELECT * FROM FoodItem WHERE RestId='{0}'",id);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -84,7 +84,6 @@ namespace Project.Models
                 food.Quantity = reader.GetInt32(reader.GetOrdinal("Quantity"));
                 food.Price = reader.GetInt32(reader.GetOrdinal("Price"));
                 food.RestId = reader.GetString(reader.GetOrdinal("RestId"));
-                food.Restaurant.Name = reader.GetString(reader.GetOrdinal("Name"));
                 foods.Add(food);
             }
             conn.Close();

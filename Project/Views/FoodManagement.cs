@@ -31,5 +31,12 @@ namespace Project.Views
         {
             new UpdateFood().Show();
         }
+
+        
+        private void ShowClicked(object sender, EventArgs e)
+        {
+            new FoodList().Show();
+
+        }
     }
 }

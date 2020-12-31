@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,42 @@ namespace Project.Views
         public FoodList()
         {
             InitializeComponent();
+           
+
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SbmitClicked(object sender, EventArgs e)
+        {
+            string id = tbId.Text;
+            dynamic food = FoodController.GetAllFood(id);
+            if (food!=null)
+            {
+                dynamic restaurant = RestaurantController.GetRestaurant(id);
+                if (restaurant != null)
+                {
+                    tbName.Text = restaurant.Name;
+                }
+                else
+                {
+                    MessageBox.Show("No Restaurant found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                dgView.DataSource = food;
+            }
+            else
+            {
+                MessageBox.Show("No Restaurant found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }
