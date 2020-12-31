@@ -1,10 +1,10 @@
 ﻿using Project.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Project.Controllers
 {
     public class FoodController
@@ -19,6 +19,26 @@ namespace Project.Controllers
             f.Price = food.Price;
             f.RestId = food.RestId;
             return db.Foods.AddFood(f);
+        }
+        public static bool DeleteFood(string id)
+        {
+            return db.Foods.DeleteFood(id);
+        }
+        public static Food GetFood(string id)
+        {
+            return db.Foods.GetFood(id);
+        }
+        public static bool UpdateFood(dynamic food)
+        {
+            Food f = new Food();
+            f.Id = food.Id;
+            f.Quantity = food.Quantity;
+            f.Price = food.Price;
+            return db.Foods.UpdateFood(f);
+        }
+        public static ArrayList GetAllFood()
+        {
+            return db.Foods.GetAllFood();
         }
 
     }

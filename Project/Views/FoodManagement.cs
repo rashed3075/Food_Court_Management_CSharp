@@ -21,5 +21,15 @@ namespace Project.Views
         {
             new FoodRegForm().Show();
         }
+
+        private void rFood(object sender, EventArgs e)
+        {
+            new RemoveFood().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new UpdateFood().Show();
+        }
     }
 }

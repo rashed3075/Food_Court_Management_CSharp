@@ -118,6 +118,12 @@
     <Compile Include="Views\FindRestaurant.Designer.cs">
       <DependentUpon>FindRestaurant.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FoodList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FoodList.Designer.cs">
+      <DependentUpon>FoodList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FoodManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,11 +166,18 @@
     <Compile Include="Views\EmployeeReg.Designer.cs">
       <DependentUpon>EmployeeReg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Remove Food.cs" />
     <Compile Include="Views\RemoveEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\RemoveEmployee.Designer.cs">
       <DependentUpon>RemoveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RemoveFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RemoveFood.Designer.cs">
+      <DependentUpon>RemoveFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\RemoveRestaurant.cs">
       <SubType>Form</SubType>
@@ -202,6 +215,12 @@
     <Compile Include="Views\UpdateEmployee.Designer.cs">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UpdateFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdateFood.Designer.cs">
+      <DependentUpon>UpdateFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UpdateRestaurant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +254,9 @@
     <EmbeddedResource Include="Views\FindRestaurant.resx">
       <DependentUpon>FindRestaurant.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FoodList.resx">
+      <DependentUpon>FoodList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FoodManagement.resx">
       <DependentUpon>FoodManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +281,9 @@
     <EmbeddedResource Include="Views\RemoveEmployee.resx">
       <DependentUpon>RemoveEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\RemoveFood.resx">
+      <DependentUpon>RemoveFood.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\RemoveRestaurant.resx">
       <DependentUpon>RemoveRestaurant.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpdateFood.resx">
+      <DependentUpon>UpdateFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UpdateRestaurant.resx">
       <DependentUpon>UpdateRestaurant.cs</DependentUpon>
