@@ -95,6 +95,7 @@
             this.foodMenu.TabIndex = 4;
             this.foodMenu.Text = "Food Menu";
             this.foodMenu.UseVisualStyleBackColor = false;
+            this.foodMenu.Click += new System.EventHandler(this.foodMenu_Click);
             // 
             // button3
             // 

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Project.Models
 {
-    class Food
+    public class Food
     {
         public string Id { get; set; }
         public string Name { get; set; }
         public int Quantity { get; set; }
         public int Price { get; set; }
+        public string RestId { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace Project.Models
         public Customers Customers { get; set; }
         public Employees Employees { get; set; }
         public Restaurants Restaurants { get; set; }
+        public Foods Foods { get; set; }
         public Database()
         {
             //string Nijhum = @"LAPTOP-2U5ORHDR\SQLEXPRESS1;Database=Project;User Id=sa;Password=database;";
@@ -22,6 +23,7 @@ namespace Project.Models
             Customers = new Customers(conn);
             Employees = new Employees(conn);
             Restaurants = new Restaurants(conn);
+            Foods = new Foods(conn);
         }
 
     }

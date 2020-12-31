@@ -49,6 +49,7 @@
             this.label1.Size = new System.Drawing.Size(337, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Restaurant Registration\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -59,6 +60,7 @@
             this.label3.Size = new System.Drawing.Size(122, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Restaurant Id";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -69,6 +71,7 @@
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = " Name";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -79,6 +82,7 @@
             this.label5.Size = new System.Drawing.Size(81, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Location";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // tbId
             // 
@@ -86,6 +90,7 @@
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(133, 22);
             this.tbId.TabIndex = 6;
+            this.tbId.TextChanged += new System.EventHandler(this.tbId_TextChanged);
             // 
             // tbLocation
             // 
@@ -93,6 +98,7 @@
             this.tbLocation.Name = "tbLocation";
             this.tbLocation.Size = new System.Drawing.Size(133, 22);
             this.tbLocation.TabIndex = 7;
+            this.tbLocation.TextChanged += new System.EventHandler(this.tbLocation_TextChanged);
             // 
             // tbName
             // 
@@ -100,6 +106,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(133, 22);
             this.tbName.TabIndex = 8;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // Registration
             // 
@@ -120,6 +127,7 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RestaurantRegForm
             // 

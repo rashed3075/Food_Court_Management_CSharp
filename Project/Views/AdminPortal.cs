@@ -48,5 +48,10 @@ namespace Project.Views
         {
             new RestaurantManagement().Show();
         }
+
+        private void foodMenu_Click(object sender, EventArgs e)
+        {
+            new FoodManagement().Show();
+        }
     }
 }
