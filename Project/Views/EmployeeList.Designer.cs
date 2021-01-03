@@ -30,6 +30,7 @@
         {
             this.dgView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.labelEmployeeList = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,12 +39,12 @@
             this.dgView.AllowUserToAddRows = false;
             this.dgView.AllowUserToDeleteRows = false;
             this.dgView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgView.Location = new System.Drawing.Point(79, 75);
+            this.dgView.Location = new System.Drawing.Point(103, 110);
             this.dgView.Name = "dgView";
             this.dgView.ReadOnly = true;
             this.dgView.RowHeadersWidth = 51;
             this.dgView.RowTemplate.Height = 24;
-            this.dgView.Size = new System.Drawing.Size(559, 272);
+            this.dgView.Size = new System.Drawing.Size(601, 331);
             this.dgView.TabIndex = 0;
             this.dgView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgView_CellContentClick);
             // 
@@ -58,18 +59,31 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // labelEmployeeList
+            // 
+            this.labelEmployeeList.AutoSize = true;
+            this.labelEmployeeList.Font = new System.Drawing.Font("Arial Narrow", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployeeList.Location = new System.Drawing.Point(295, 47);
+            this.labelEmployeeList.Name = "labelEmployeeList";
+            this.labelEmployeeList.Size = new System.Drawing.Size(183, 35);
+            this.labelEmployeeList.TabIndex = 2;
+            this.labelEmployeeList.Text = "Employee List";
+            // 
             // EmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 498);
+            this.Controls.Add(this.labelEmployeeList);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgView);
             this.Name = "EmployeeList";
             this.Text = "EmployeeList";
             ((System.ComponentModel.ISupportInitialize)(this.dgView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,5 +91,6 @@
 
         private System.Windows.Forms.DataGridView dgView;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelEmployeeList;
     }
 }

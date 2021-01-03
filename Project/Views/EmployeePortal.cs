@@ -16,5 +16,10 @@ namespace Project.Views
         {
             InitializeComponent();
         }
+
+        private void cManagement_Click(object sender, EventArgs e)
+        {
+            new CustomerManagement().Show();
+        }
     }
 }

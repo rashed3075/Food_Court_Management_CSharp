@@ -20,11 +20,11 @@ namespace Project.Views
 
         private void searchItem(object sender, EventArgs e)
         {
-            panel.Visible = true;
             string userName = tbUser.Text;
             dynamic employee = EmployeeController.GetEmployee(userName);
             if (employee != null)
             {
+                panel.Visible = true;
                 tbName.Text = employee.Name;
                 tbMobile.Text = employee.MobileNo;
             }
@@ -40,7 +40,7 @@ namespace Project.Views
             {
                  Name = tbName.Text,
                  MobileNo = tbMobile.Text,
-                UserName = tbUser.Text
+                 UserName = tbUser.Text
 
             };
             var result = EmployeeController.UpdateEmployee(employee);
@@ -70,6 +70,11 @@ namespace Project.Views
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateEmployee_Load(object sender, EventArgs e)
         {
 
         }

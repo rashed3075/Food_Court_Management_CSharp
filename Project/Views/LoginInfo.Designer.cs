@@ -95,14 +95,14 @@
             // 
             // userName
             // 
-            this.userName.Location = new System.Drawing.Point(108, 78);
+            this.userName.Location = new System.Drawing.Point(117, 78);
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(172, 22);
             this.userName.TabIndex = 5;
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(108, 122);
+            this.password.Location = new System.Drawing.Point(117, 122);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(172, 22);
             this.password.TabIndex = 6;

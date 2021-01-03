@@ -82,6 +82,12 @@
     <Compile Include="Views\AdminReg.Designer.cs">
       <DependentUpon>AdminReg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CustomerPortal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     <Compile Include="Views\ForgetPassword.Designer.cs">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerManagement.Designer.cs">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +179,12 @@
       <DependentUpon>EmployeeReg.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Remove Food.cs" />
+    <Compile Include="Views\RemoveCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RemoveCustomer.Designer.cs">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\RemoveEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,11 +221,23 @@
     <Compile Include="Views\RestaurantRegForm.Designer.cs">
       <DependentUpon>RestaurantRegForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\SearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SearchCustomer.Designer.cs">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SearchEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\SearchEmployee.Designer.cs">
       <DependentUpon>SearchEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UpdateEmployee.cs">
       <SubType>Form</SubType>
@@ -242,6 +272,12 @@
     <EmbeddedResource Include="Views\AdminReg.resx">
       <DependentUpon>AdminReg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerPortal.resx">
+      <DependentUpon>CustomerPortal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerReg.resx">
       <DependentUpon>CustomerReg.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeePortal.resx">
+      <DependentUpon>EmployeePortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FindRestaurant.resx">
       <DependentUpon>FindRestaurant.cs</DependentUpon>
@@ -266,6 +305,9 @@
     <EmbeddedResource Include="Views\ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerManagement.resx">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EmployeeReg.resx">
       <DependentUpon>EmployeeReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RemoveCustomer.resx">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RemoveEmployee.resx">
       <DependentUpon>RemoveEmployee.cs</DependentUpon>
@@ -296,8 +341,14 @@
     <EmbeddedResource Include="Views\RestaurantRegForm.resx">
       <DependentUpon>RestaurantRegForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\SearchCustomer.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SearchEmployee.resx">
       <DependentUpon>SearchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>

@@ -16,5 +16,30 @@ namespace Project.Views
         {
             InitializeComponent();
         }
+
+        private void btnFoodMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustomerPortal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPlaceOrder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOrderHistory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRestaurants_Click(object sender, EventArgs e)
+        {
+            new RestaurantList().Show();
+        }
     }
 }
