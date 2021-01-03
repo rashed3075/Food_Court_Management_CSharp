@@ -25,11 +25,6 @@ namespace Project.Views
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SbmitClicked(object sender, EventArgs e)
         {
             string id = tbId.Text;

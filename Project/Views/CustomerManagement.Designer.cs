@@ -44,6 +44,7 @@
             this.updateCustomer.TabIndex = 9;
             this.updateCustomer.Text = "Update Customer";
             this.updateCustomer.UseVisualStyleBackColor = false;
+            this.updateCustomer.Click += new System.EventHandler(this.updateCustomer_Click);
             // 
             // showCustomer
             // 

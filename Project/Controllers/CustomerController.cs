@@ -35,11 +35,8 @@ namespace Project.Controllers
         {
             Customer c = new Customer();
             c.Name = customer.Name;
-            c.Id = customer.Id;
-            c.Gender = customer.Gender;
             c.MobileNo = customer.MobileNo;
             c.UserName = customer.UserName;
-            c.Password = customer.Password;
             return db.Customers.UpdateCustomer(c);
         }
         public static bool DeleteCustomer(string userName)

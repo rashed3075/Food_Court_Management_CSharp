@@ -34,7 +34,6 @@ namespace Project.Controllers
         {
             Employee e = new Employee();
             e.Name = employee.Name;
-
             e.MobileNo = employee.MobileNo;
             e.UserName = employee.UserName;
           
