@@ -26,6 +26,6 @@ namespace Project.Models
             Restaurants = new Restaurants(conn);
             Foods = new Foods(conn);
         }
-
+         
     }
 }
