@@ -46,7 +46,6 @@ namespace Project.Views
                 Name = tbName.Text,
                 MobileNo = tbMobile.Text,
                 UserName = tbUser.Text
-
             };
             var result = CustomerController.UpdateCustomer(cust);
             if (result)

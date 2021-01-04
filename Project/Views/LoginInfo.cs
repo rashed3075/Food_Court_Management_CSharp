@@ -30,7 +30,7 @@ namespace Project.Views
 
         private void checkPass_CheckedChanged(object sender, EventArgs e)
         {
-             if(checkPass.Checked)
+            if(checkPass.Checked)
             {
                 password.UseSystemPasswordChar = false;
             }
@@ -46,7 +46,7 @@ namespace Project.Views
             string Password = password.Text;
             string catagory = Catagory.SelectedItem.ToString();
           
-          if(catagory.Equals("Admin"))
+            if(catagory.Equals("Admin"))
             {
                 dynamic AdminResult = AdminController.AuthenticateAdmin(UserName, Password);
                

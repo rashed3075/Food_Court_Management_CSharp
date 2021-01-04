@@ -56,6 +56,7 @@
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(483, 205);
             this.panel.TabIndex = 9;
+            this.panel.Visible = false;
             // 
             // label6
             // 
