@@ -1,5 +1,6 @@
 ﻿using Project.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,10 @@ namespace Project.Controllers
             o.FId = order.FId;
             o.FQuantity = order.FQuantity;
             return db.Orders.AddOrder(o);
+        }
+       public static ArrayList GetAllOrder()
+        {
+            return db.Orders.GetAllOrder();
         }
     }
 }

@@ -34,23 +34,25 @@ namespace Project.Views
             var FoodResult = FoodController.GetFood(tbId.Text);
             if (FoodResult != null)
             {
-                var OrderResult = OrderController.AddOrder(order);
-                if (OrderResult)
+               
+                int a = FoodResult.Quantity - Convert.ToInt32(tbQuantity.Text);
+                if (a > 0)
                 {
-                  
-                    if (FoodResult.Quantity - Convert.ToInt32(tbQuantity.Text) > 0)
+                    var food = new
                     {
-                        FoodResult.Quantity = FoodResult.Quantity - Convert.ToInt32(tbQuantity.Text);
-                        var food = new
-                        {
-
-                        };
+                        Id = tbId.Text,
+                        Quantity = a
+                    };
+                    var x = FoodController.UpdateFood1(food);
+                    var OrderResult = OrderController.AddOrder(order);
+                    if (OrderResult)
+                    {
+                        MessageBox.Show("Confirm Order Successfully", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    MessageBox.Show("Order Confirm Successfully", "Order", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    MessageBox.Show("Order cancel", "Order", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Sorry Food is not available right now", "Quantity", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else

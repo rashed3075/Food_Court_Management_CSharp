@@ -175,6 +175,12 @@
     <Compile Include="Views\LoginInfo.Designer.cs">
       <DependentUpon>LoginInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\RegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,12 @@
     </Compile>
     <Compile Include="Views\RestaurantRegForm.Designer.cs">
       <DependentUpon>RestaurantRegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReviewRestaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReviewRestaurant.Designer.cs">
+      <DependentUpon>ReviewRestaurant.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SearchCustomer.cs">
       <SubType>Form</SubType>
@@ -327,6 +339,9 @@
     <EmbeddedResource Include="Views\LoginInfo.resx">
       <DependentUpon>LoginInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RestaurantRegForm.resx">
       <DependentUpon>RestaurantRegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReviewRestaurant.resx">
+      <DependentUpon>ReviewRestaurant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SearchCustomer.resx">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
@@ -414,6 +432,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\restaurant-blurry-background-modern-hipster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1441032351_Young_background_education083115_03.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
