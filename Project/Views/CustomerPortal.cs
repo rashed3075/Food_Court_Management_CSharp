@@ -36,7 +36,7 @@ namespace Project.Views
 
         private void btnOrderHistory_Click(object sender, EventArgs e)
         {
-
+            new OrderHistory().Show();
         }
 
         private void btnRestaurants_Click(object sender, EventArgs e)

@@ -40,6 +40,13 @@ namespace Project.Controllers
         {
             return db.Foods.GetAllFood(id);
         }
-
+        public static bool UpdateFood1(dynamic food)
+        {
+            Food f = new Food();
+            f.Id = food.Id;
+            f.Quantity = food.Quantity;
+       
+            return db.Foods.UpdateFood1(f);
+        }
     }
 }

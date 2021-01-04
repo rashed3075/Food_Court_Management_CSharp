@@ -26,7 +26,7 @@ namespace Project.Models
             conn.Close();
             if (result > 0) return true;
             return false;
-        }
+        } 
         public bool DeleteFood(string id)
         {
             conn.Open();
@@ -72,6 +72,7 @@ namespace Project.Models
         public ArrayList GetAllFood(string id)
         {
             ArrayList foods = new ArrayList();
+         
             conn.Open();
             string query = String.Format("SELECT * FROM FoodItem WHERE RestId='{0}'",id);
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -89,7 +90,16 @@ namespace Project.Models
             conn.Close();
             return foods;
         }
-
+        public bool UpdateFood1(Food food)
+        {
+            conn.Open();
+            string query = String.Format("UPDATE FoodItem SET Quantity='{0}' WHERE Id='{1}'", food.Quantity, food.Id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;
+        }
 
     }
 }

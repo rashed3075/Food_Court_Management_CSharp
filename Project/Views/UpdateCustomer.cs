@@ -41,7 +41,7 @@ namespace Project.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var cust = new
+            var cust = new 
             {
                 Name = tbName.Text,
                 MobileNo = tbMobile.Text,
