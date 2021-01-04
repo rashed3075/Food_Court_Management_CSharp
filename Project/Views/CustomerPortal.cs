@@ -12,14 +12,16 @@ namespace Project.Views
 {
     public partial class CustomerPortal : Form
     {
-        public CustomerPortal()
+        public CustomerPortal(string name)
         {
             InitializeComponent();
+            string output = String.Format("Welcome {0}", name);
+            WelcomeBox.Text = output;
         }
 
         private void btnFoodMenu_Click(object sender, EventArgs e)
         {
-
+            new FoodList().Show();
         }
 
         private void CustomerPortal_Load(object sender, EventArgs e)
@@ -29,7 +31,7 @@ namespace Project.Views
 
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
-
+            new CustomerOrder().Show();
         }
 
         private void btnOrderHistory_Click(object sender, EventArgs e)

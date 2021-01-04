@@ -50,6 +50,7 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -66,6 +67,8 @@
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\Food.cs" />
     <Compile Include="Models\Foods.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\Restaurants.cs" />
     <Compile Include="Program.cs" />
@@ -87,6 +90,12 @@
     </Compile>
     <Compile Include="Views\CustomerList.Designer.cs">
       <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerOrder.Designer.cs">
+      <DependentUpon>CustomerOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CustomerPortal.cs">
       <SubType>Form</SubType>
@@ -265,6 +274,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\AdminPortal.resx">
       <DependentUpon>AdminPortal.cs</DependentUpon>
@@ -274,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerList.resx">
       <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerOrder.resx">
+      <DependentUpon>CustomerOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerPortal.resx">
       <DependentUpon>CustomerPortal.cs</DependentUpon>
@@ -372,6 +385,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\pngtree-western-food-gourmet-poster-background-template-image_135711.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodCourt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tech-background-image-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16668.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beige-restaurant-background-vector-1878159.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant-blurry-background-modern-hipster.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -48,5 +48,10 @@ namespace Project.Views
             }
             
         }
+
+        private void FoodList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

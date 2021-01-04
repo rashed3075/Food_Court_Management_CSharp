@@ -46,6 +46,7 @@ namespace Project.Views
                 Price=Convert.ToInt32(tbPrice.Text)
             };
             var result = FoodController.UpdateFood(food);
+            
             if (result)
             {
                 MessageBox.Show("Food Updated");
@@ -54,6 +55,11 @@ namespace Project.Views
             {
                 MessageBox.Show("Food couldn't updated");
             }
+        }
+
+        private void tbQuantity_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

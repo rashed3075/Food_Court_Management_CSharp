@@ -12,14 +12,21 @@ namespace Project.Views
 {
     public partial class EmployeePortal : Form
     {
-        public EmployeePortal()
+        public EmployeePortal(string name)
         {
             InitializeComponent();
+            string output = String.Format("Welcome {0}", name);
+            WelcomeBox.Text = output;
         }
 
         private void cManagement_Click(object sender, EventArgs e)
         {
             new CustomerManagement().Show();
+        }
+
+        private void addDiscount_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

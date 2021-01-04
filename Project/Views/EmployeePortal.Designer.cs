@@ -33,6 +33,7 @@
             this.editDiscount = new System.Windows.Forms.Button();
             this.removeDiscount = new System.Windows.Forms.Button();
             this.deliverOrder = new System.Windows.Forms.Button();
+            this.WelcomeBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cManagement
@@ -55,6 +56,7 @@
             this.addDiscount.TabIndex = 5;
             this.addDiscount.Text = "Add Discount";
             this.addDiscount.UseVisualStyleBackColor = false;
+            this.addDiscount.Click += new System.EventHandler(this.addDiscount_Click);
             // 
             // editDiscount
             // 
@@ -86,11 +88,24 @@
             this.deliverOrder.Text = "Deliver Order";
             this.deliverOrder.UseVisualStyleBackColor = false;
             // 
+            // WelcomeBox
+            // 
+            this.WelcomeBox.AutoSize = true;
+            this.WelcomeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeBox.Location = new System.Drawing.Point(452, 9);
+            this.WelcomeBox.Name = "WelcomeBox";
+            this.WelcomeBox.Size = new System.Drawing.Size(344, 29);
+            this.WelcomeBox.TabIndex = 9;
+            this.WelcomeBox.Text = "Welcome Rashedul Rabby";
+            // 
             // EmployeePortal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Project.Properties.Resources.tech_background_image_2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(817, 517);
+            this.Controls.Add(this.WelcomeBox);
             this.Controls.Add(this.deliverOrder);
             this.Controls.Add(this.removeDiscount);
             this.Controls.Add(this.editDiscount);
@@ -99,6 +114,7 @@
             this.Name = "EmployeePortal";
             this.Text = "EmployeePortal";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,5 +125,6 @@
         private System.Windows.Forms.Button editDiscount;
         private System.Windows.Forms.Button removeDiscount;
         private System.Windows.Forms.Button deliverOrder;
+        private System.Windows.Forms.Label WelcomeBox;
     }
 }

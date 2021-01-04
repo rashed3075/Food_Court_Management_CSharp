@@ -33,12 +33,13 @@
             this.btnPlaceOrder = new System.Windows.Forms.Button();
             this.btnOrderHistory = new System.Windows.Forms.Button();
             this.btnReview = new System.Windows.Forms.Button();
+            this.WelcomeBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnFoodMenu
             // 
             this.btnFoodMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnFoodMenu.Location = new System.Drawing.Point(543, 74);
+            this.btnFoodMenu.Location = new System.Drawing.Point(504, 71);
             this.btnFoodMenu.Name = "btnFoodMenu";
             this.btnFoodMenu.Size = new System.Drawing.Size(114, 72);
             this.btnFoodMenu.TabIndex = 5;
@@ -49,7 +50,7 @@
             // btnRestaurants
             // 
             this.btnRestaurants.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnRestaurants.Location = new System.Drawing.Point(139, 74);
+            this.btnRestaurants.Location = new System.Drawing.Point(100, 71);
             this.btnRestaurants.Name = "btnRestaurants";
             this.btnRestaurants.Size = new System.Drawing.Size(114, 72);
             this.btnRestaurants.TabIndex = 6;
@@ -60,7 +61,7 @@
             // btnPlaceOrder
             // 
             this.btnPlaceOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnPlaceOrder.Location = new System.Drawing.Point(344, 192);
+            this.btnPlaceOrder.Location = new System.Drawing.Point(305, 189);
             this.btnPlaceOrder.Name = "btnPlaceOrder";
             this.btnPlaceOrder.Size = new System.Drawing.Size(114, 72);
             this.btnPlaceOrder.TabIndex = 7;
@@ -71,7 +72,7 @@
             // btnOrderHistory
             // 
             this.btnOrderHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnOrderHistory.Location = new System.Drawing.Point(139, 333);
+            this.btnOrderHistory.Location = new System.Drawing.Point(100, 330);
             this.btnOrderHistory.Name = "btnOrderHistory";
             this.btnOrderHistory.Size = new System.Drawing.Size(114, 72);
             this.btnOrderHistory.TabIndex = 8;
@@ -82,18 +83,31 @@
             // btnReview
             // 
             this.btnReview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnReview.Location = new System.Drawing.Point(543, 333);
+            this.btnReview.Location = new System.Drawing.Point(504, 330);
             this.btnReview.Name = "btnReview";
             this.btnReview.Size = new System.Drawing.Size(114, 72);
             this.btnReview.TabIndex = 9;
             this.btnReview.Text = "Make Review";
             this.btnReview.UseVisualStyleBackColor = false;
             // 
+            // WelcomeBox
+            // 
+            this.WelcomeBox.AutoSize = true;
+            this.WelcomeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeBox.Location = new System.Drawing.Point(424, 9);
+            this.WelcomeBox.Name = "WelcomeBox";
+            this.WelcomeBox.Size = new System.Drawing.Size(344, 29);
+            this.WelcomeBox.TabIndex = 10;
+            this.WelcomeBox.Text = "Welcome Rashedul Rabby";
+            // 
             // CustomerPortal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Project.Properties.Resources.images;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 475);
+            this.Controls.Add(this.WelcomeBox);
             this.Controls.Add(this.btnReview);
             this.Controls.Add(this.btnOrderHistory);
             this.Controls.Add(this.btnPlaceOrder);
@@ -103,6 +117,7 @@
             this.Text = "CustomerPortal";
             this.Load += new System.EventHandler(this.CustomerPortal_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -113,5 +128,6 @@
         private System.Windows.Forms.Button btnPlaceOrder;
         private System.Windows.Forms.Button btnOrderHistory;
         private System.Windows.Forms.Button btnReview;
+        private System.Windows.Forms.Label WelcomeBox;
     }
 }

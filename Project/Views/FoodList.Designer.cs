@@ -43,20 +43,21 @@
             this.dgView.AllowUserToAddRows = false;
             this.dgView.AllowUserToDeleteRows = false;
             this.dgView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgView.Location = new System.Drawing.Point(71, 162);
+            this.dgView.Location = new System.Drawing.Point(111, 162);
             this.dgView.Name = "dgView";
             this.dgView.ReadOnly = true;
             this.dgView.RowHeadersWidth = 51;
             this.dgView.RowTemplate.Height = 24;
-            this.dgView.Size = new System.Drawing.Size(589, 250);
+            this.dgView.Size = new System.Drawing.Size(549, 250);
             this.dgView.TabIndex = 0;
             this.dgView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(155, 40);
+            this.label1.Location = new System.Drawing.Point(187, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 2;
@@ -64,6 +65,7 @@
             // 
             // tbId
             // 
+            this.tbId.BackColor = System.Drawing.Color.White;
             this.tbId.Location = new System.Drawing.Point(332, 38);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(148, 22);
@@ -103,7 +105,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Project.Properties.Resources.index;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 502);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbId);
@@ -111,6 +115,7 @@
             this.Controls.Add(this.dgView);
             this.Name = "FoodList";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.FoodList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
