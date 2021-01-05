@@ -43,5 +43,10 @@ namespace Project.Views
         {
             new RestaurantList().Show();
         }
+
+        private void btnReview_Click(object sender, EventArgs e)
+        {
+            new ReviewRestaurant().Show();
+        }
     }
 }

@@ -78,6 +78,7 @@
             this.btnReview.TabIndex = 9;
             this.btnReview.Text = "Make Review";
             this.btnReview.UseVisualStyleBackColor = false;
+            this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
             // 
             // WelcomeBox
             // 

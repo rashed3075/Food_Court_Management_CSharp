@@ -15,6 +15,7 @@ namespace Project.Models
         public Restaurants Restaurants { get; set; }
         public Foods Foods { get; set; }
         public Orders Orders { get; set; }
+        public Reviews Reviews { get; set; }
 
         public Database()
         {
@@ -28,6 +29,7 @@ namespace Project.Models
             Restaurants = new Restaurants(conn);
             Foods = new Foods(conn);
             Orders = new Orders(conn);
+            Reviews = new Reviews(conn);
         }
          
     }

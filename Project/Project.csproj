@@ -52,6 +52,7 @@
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\RestaurantController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +72,8 @@
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\Restaurants.cs" />
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\Reviews.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\AdminPortal.cs">
