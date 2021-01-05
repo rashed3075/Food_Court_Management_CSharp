@@ -15,7 +15,8 @@ namespace Project.Models
         public Restaurants Restaurants { get; set; }
         public Foods Foods { get; set; }
         public Orders Orders { get; set; }
-
+        public Discouts Discouts { get; set; }
+        public Reviews Reviews { get; set; }
         public Database()
         {
             //string Nijhum = @"Server=LAPTOP-2U5ORHDR\SQLEXPRESS1;Database=Project;User Id=sa;Password=database;";
@@ -28,6 +29,8 @@ namespace Project.Models
             Restaurants = new Restaurants(conn);
             Foods = new Foods(conn);
             Orders = new Orders(conn);
+            Discouts = new Discouts(conn);
+            Reviews = new Reviews(conn);
         }
          
     }

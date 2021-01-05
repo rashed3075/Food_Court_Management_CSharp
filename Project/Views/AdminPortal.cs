@@ -53,5 +53,22 @@ namespace Project.Views
         {
             new FoodManagement().Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new SearchAdmin().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new OrderHistory().Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoginInfo li = new LoginInfo();
+            this.Visible = false;
+            li.Visible = true;
+        }
     }
 }

@@ -48,10 +48,12 @@
   <ItemGroup>
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DiscountController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\RestaurantController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +65,8 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\Discount.cs" />
+    <Compile Include="Models\Discouts.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\Food.cs" />
@@ -71,6 +75,8 @@
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\Restaurants.cs" />
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\Reviews.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\AddingDiscount.cs">
@@ -206,6 +212,12 @@
     <Compile Include="Views\RemoveCustomer.Designer.cs">
       <DependentUpon>RemoveCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\RemoveDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RemoveDiscount.Designer.cs">
+      <DependentUpon>RemoveDiscount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\RemoveEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +259,12 @@
     </Compile>
     <Compile Include="Views\ReviewRestaurant.Designer.cs">
       <DependentUpon>ReviewRestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SearchAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SearchAdmin.Designer.cs">
+      <DependentUpon>SearchAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SearchCustomer.cs">
       <SubType>Form</SubType>
@@ -360,6 +378,9 @@
     <EmbeddedResource Include="Views\RemoveCustomer.resx">
       <DependentUpon>RemoveCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\RemoveDiscount.resx">
+      <DependentUpon>RemoveDiscount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\RemoveEmployee.resx">
       <DependentUpon>RemoveEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -380,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ReviewRestaurant.resx">
       <DependentUpon>ReviewRestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SearchAdmin.resx">
+      <DependentUpon>SearchAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SearchCustomer.resx">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
@@ -447,6 +471,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\discount-background-sale-vector-9280811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundcheck.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

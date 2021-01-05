@@ -40,5 +40,10 @@ namespace Project.Views
             this.Visible = false;
             li.Visible = true;
         }
+
+        private void removeDiscount_Click(object sender, EventArgs e)
+        {
+            new RemoveDiscount().Show();
+        }
     }
 }

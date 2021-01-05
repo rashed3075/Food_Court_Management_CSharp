@@ -29,7 +29,7 @@ namespace Project.Views
 
         private void ExitClicked(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Application Exit!", "Are you sure want to exit ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialogResult = MessageBox.Show("Do you want to Exit!", "Are you sure want to exit ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
                 Application.Exit();

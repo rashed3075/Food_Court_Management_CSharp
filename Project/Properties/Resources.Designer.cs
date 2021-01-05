@@ -83,6 +83,16 @@ namespace Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundcheck {
+            get {
+                object obj = ResourceManager.GetObject("backgroundcheck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap beige_restaurant_background_vector_1878159 {
             get {
                 object obj = ResourceManager.GetObject("beige-restaurant-background-vector-1878159", resourceCulture);

@@ -78,6 +78,7 @@
             this.removeDiscount.TabIndex = 7;
             this.removeDiscount.Text = "Remove Discount";
             this.removeDiscount.UseVisualStyleBackColor = false;
+            this.removeDiscount.Click += new System.EventHandler(this.removeDiscount_Click);
             // 
             // deliverOrder
             // 
@@ -94,7 +95,7 @@
             // 
             this.WelcomeBox.AutoSize = true;
             this.WelcomeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeBox.Location = new System.Drawing.Point(452, 9);
+            this.WelcomeBox.Location = new System.Drawing.Point(442, 9);
             this.WelcomeBox.Name = "WelcomeBox";
             this.WelcomeBox.Size = new System.Drawing.Size(344, 29);
             this.WelcomeBox.TabIndex = 9;

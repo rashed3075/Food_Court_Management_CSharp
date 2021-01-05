@@ -32,6 +32,7 @@ namespace Project.Controllers
         {
             Food f = new Food();
             f.Id = food.Id;
+            f.Name = food.Name;
             f.Quantity = food.Quantity;
             f.Price = food.Price;
             return db.Foods.UpdateFood(f);
@@ -47,6 +48,14 @@ namespace Project.Controllers
             f.Quantity = food.Quantity;
        
             return db.Foods.UpdateFood1(f);
+        }
+        public static bool UpdateFood2(dynamic food)
+        {
+            Food f = new Food();
+            f.Id = food.Id;
+            f.Price = food.Price;
+
+            return db.Foods.UpdateFood2(f);
         }
     }
 }

@@ -29,28 +29,82 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.confrim = new System.Windows.Forms.Button();
+            this.tbAmount = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbFoodId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.tbFoodId);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.confrim);
+            this.panel1.Controls.Add(this.tbAmount);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(207, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 294);
+            this.panel1.Size = new System.Drawing.Size(394, 352);
             this.panel1.TabIndex = 0;
+            // 
+            // confrim
+            // 
+            this.confrim.BackColor = System.Drawing.Color.Transparent;
+            this.confrim.ForeColor = System.Drawing.Color.Lime;
+            this.confrim.Location = new System.Drawing.Point(88, 270);
+            this.confrim.Name = "confrim";
+            this.confrim.Size = new System.Drawing.Size(176, 33);
+            this.confrim.TabIndex = 5;
+            this.confrim.Text = "Confirm Discount";
+            this.confrim.UseVisualStyleBackColor = false;
+            this.confrim.Click += new System.EventHandler(this.ConfrimCliked);
+            // 
+            // tbAmount
+            // 
+            this.tbAmount.Location = new System.Drawing.Point(165, 161);
+            this.tbAmount.Name = "tbAmount";
+            this.tbAmount.Size = new System.Drawing.Size(158, 22);
+            this.tbAmount.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(38, 161);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Amount";
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(165, 89);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(158, 22);
+            this.tbName.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(38, 92);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Event Name";
             // 
             // label1
             // 
@@ -65,54 +119,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Discount";
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(38, 92);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Event Name";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(38, 216);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Food Id";
             // 
-            // textBox1
+            // tbFoodId
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 22);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(47, 161);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Amount";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(165, 161);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 22);
-            this.textBox2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.ForeColor = System.Drawing.Color.Green;
-            this.button1.Location = new System.Drawing.Point(109, 217);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Confirm Discount";
-            this.button1.UseVisualStyleBackColor = false;
+            this.tbFoodId.Location = new System.Drawing.Point(165, 216);
+            this.tbFoodId.Name = "tbFoodId";
+            this.tbFoodId.Size = new System.Drawing.Size(158, 22);
+            this.tbFoodId.TabIndex = 7;
             // 
             // AddingDiscount
             // 
@@ -134,11 +158,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button confrim;
+        private System.Windows.Forms.TextBox tbAmount;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbFoodId;
+        private System.Windows.Forms.Label label4;
     }
 }
