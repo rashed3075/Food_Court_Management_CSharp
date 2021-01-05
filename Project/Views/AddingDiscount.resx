@@ -117,41 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1441032351_Young_background_education083115_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1441032351_Young_background_education083115_03.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tech-background-image-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tech-background-image-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="beige-restaurant-background-vector-1878159" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\beige-restaurant-background-vector-1878159.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="index1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\index1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="index2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\index2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="16668" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\16668.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="index" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\index.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-western-food-gourmet-poster-background-template-image_135711" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-western-food-gourmet-poster-background-template-image_135711.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restaurant-blurry-background-modern-hipster" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restaurant-blurry-background-modern-hipster.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="foodCourt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\foodCourt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="discount-background-sale-vector-9280811" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\discount-background-sale-vector-9280811.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

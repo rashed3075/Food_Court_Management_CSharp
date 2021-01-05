@@ -65,8 +65,9 @@
             this.editDiscount.Name = "editDiscount";
             this.editDiscount.Size = new System.Drawing.Size(114, 72);
             this.editDiscount.TabIndex = 6;
-            this.editDiscount.Text = "Edit Discount";
+            this.editDiscount.Text = "Log out";
             this.editDiscount.UseVisualStyleBackColor = false;
+            this.editDiscount.Click += new System.EventHandler(this.editDiscount_Click);
             // 
             // removeDiscount
             // 
@@ -85,8 +86,9 @@
             this.deliverOrder.Name = "deliverOrder";
             this.deliverOrder.Size = new System.Drawing.Size(114, 72);
             this.deliverOrder.TabIndex = 8;
-            this.deliverOrder.Text = "Deliver Order";
+            this.deliverOrder.Text = "Order History";
             this.deliverOrder.UseVisualStyleBackColor = false;
+            this.deliverOrder.Click += new System.EventHandler(this.deliverOrder_Click);
             // 
             // WelcomeBox
             // 
@@ -104,7 +106,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project.Properties.Resources.tech_background_image_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(817, 517);
+            this.ClientSize = new System.Drawing.Size(798, 517);
             this.Controls.Add(this.WelcomeBox);
             this.Controls.Add(this.deliverOrder);
             this.Controls.Add(this.removeDiscount);
