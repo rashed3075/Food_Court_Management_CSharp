@@ -24,11 +24,11 @@ namespace Project.Views
             dynamic employee = EmployeeController.DeleteEmployee(userName);
             if (employee)
             {
-                MessageBox.Show("Delete Employee Successfully");
+                MessageBox.Show("Employee Deleted Successfully");
             }
             else
             {
-                MessageBox.Show("User Not found");
+                MessageBox.Show("Employee Not found");
             }
         }
 

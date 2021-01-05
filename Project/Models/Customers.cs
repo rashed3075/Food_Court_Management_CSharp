@@ -101,6 +101,7 @@ namespace Project.Models
 
         public bool DeleteCustomer(string userName)
         {
+            conn.Open();
             string query = String.Format("DELETE FROM CustomerInfo WHERE UserName='{0}'", userName);
             SqlCommand cmd = new SqlCommand(query, conn);
             int r = cmd.ExecuteNonQuery();

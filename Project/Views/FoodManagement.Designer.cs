@@ -55,6 +55,7 @@
             this.button5.TabIndex = 16;
             this.button5.Text = "Find And Update Food\r\n";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button2
             // 
@@ -65,6 +66,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Remove Food\r\n";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.rFood);
             // 
             // AddFood
             // 
@@ -80,9 +82,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(170, 18);
+            this.label1.Location = new System.Drawing.Point(222, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 32);
             this.label1.TabIndex = 11;
@@ -97,11 +100,14 @@
             this.button4.TabIndex = 15;
             this.button4.Text = "Show All Food\r\n";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.ShowClicked);
             // 
             // FoodManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Project.Properties.Resources.images;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(809, 519);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);

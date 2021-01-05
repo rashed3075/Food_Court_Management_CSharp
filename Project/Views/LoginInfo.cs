@@ -20,7 +20,7 @@ namespace Project.Views
 
         private void LoginInfo_Load(object sender, EventArgs e)
         {
-
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Project.Views
 
         private void checkPass_CheckedChanged(object sender, EventArgs e)
         {
-             if(checkPass.Checked)
+            if(checkPass.Checked)
             {
                 password.UseSystemPasswordChar = false;
             }
@@ -46,7 +46,7 @@ namespace Project.Views
             string Password = password.Text;
             string catagory = Catagory.SelectedItem.ToString();
           
-          if(catagory.Equals("Admin"))
+            if(catagory.Equals("Admin"))
             {
                 dynamic AdminResult = AdminController.AuthenticateAdmin(UserName, Password);
                
@@ -65,7 +65,8 @@ namespace Project.Views
                 var CustomerResult =CustomerController.AuthenticateCustomer(UserName, Password);
                 if (CustomerResult != null)
                 {
-                    new CustomerPortal().Show();
+                    string welcome = CustomerResult.Name;
+                    new CustomerPortal(welcome).Show();
                 }
                 else { 
                     MessageBox.Show("User Not Valid", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -76,7 +77,8 @@ namespace Project.Views
                 var EmployeeResult = EmployeeController.AuthenticEmployee(UserName, Password);
                 if (EmployeeResult != null)
                 {
-                    new EmployeePortal().Show();
+                    string welcome = EmployeeResult.Name;
+                    new EmployeePortal(welcome).Show();
                 }
                 else
                 {
@@ -88,6 +90,11 @@ namespace Project.Views
         private void button1_Click(object sender, EventArgs e)
         {
             new ForgetPassword().Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

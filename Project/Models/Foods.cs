@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -25,11 +26,11 @@ namespace Project.Models
             conn.Close();
             if (result > 0) return true;
             return false;
-        }
+        } 
         public bool DeleteFood(string id)
         {
             conn.Open();
-            string query = String.Format("DELETE FROM FoodItem WHERE RestId='{0}'", id);
+            string query = String.Format("DELETE FROM FoodItem WHERE Id='{0}'", id);
             SqlCommand cmd = new SqlCommand(query, conn);
             int r = cmd.ExecuteNonQuery();
             conn.Close();
@@ -39,13 +40,15 @@ namespace Project.Models
         public Food GetFood(string id)
         {
             conn.Open();
-            string query = String.Format("Select FoodItem.*,Restaurant.Id,Restaurant.Name FROM FoodItem,Restaurant WHERE (FoodItem.RestId=Restaurant.Id) AND RestId='{0}'",id);
+            string query = String.Format("Select * FROM FoodItem WHERE Id='{0}'", id);
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             Food food = null;
+            
             while (reader.Read())
             {
                 food = new Food();
+         
                 food.Id = reader.GetString(reader.GetOrdinal("Id"));
                 food.Name = reader.GetString(reader.GetOrdinal("Name"));
                 food.Quantity = reader.GetInt32(reader.GetOrdinal("Quantity"));
@@ -56,8 +59,47 @@ namespace Project.Models
             conn.Close();
             return food;
         }
-
-
+        public bool UpdateFood(Food food)
+        {
+            conn.Open();
+            string query = String.Format("UPDATE FoodItem SET Name='{0}',Quantity='{1}',Price='{2}' WHERE Id='{3}'", food.Name, food.Quantity, food.Price,food.Id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;
+        }
+        public ArrayList GetAllFood(string id)
+        {
+            ArrayList foods = new ArrayList();
+         
+            conn.Open();
+            string query = String.Format("SELECT * FROM FoodItem WHERE RestId='{0}'",id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Food food = new Food();
+                food.Id = reader.GetString(reader.GetOrdinal("Id"));
+                food.Name = reader.GetString(reader.GetOrdinal("Name"));
+                food.Quantity = reader.GetInt32(reader.GetOrdinal("Quantity"));
+                food.Price = reader.GetInt32(reader.GetOrdinal("Price"));
+                food.RestId = reader.GetString(reader.GetOrdinal("RestId"));
+                foods.Add(food);
+            }
+            conn.Close();
+            return foods;
+        }
+        public bool UpdateFood1(Food food)
+        {
+            conn.Open();
+            string query = String.Format("UPDATE FoodItem SET Quantity='{0}' WHERE Id='{1}'", food.Quantity, food.Id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;
+        }
 
     }
 }

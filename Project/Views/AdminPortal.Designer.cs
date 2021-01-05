@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.WelcomeBox = new System.Windows.Forms.Label();
             this.RM = new System.Windows.Forms.Button();
             this.eManagement = new System.Windows.Forms.Button();
@@ -39,15 +38,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(865, 542);
-            this.webBrowser1.TabIndex = 0;
             // 
             // WelcomeBox
             // 
@@ -131,6 +121,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Project.Properties.Resources._16668;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(865, 542);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -139,7 +131,6 @@
             this.Controls.Add(this.eManagement);
             this.Controls.Add(this.RM);
             this.Controls.Add(this.WelcomeBox);
-            this.Controls.Add(this.webBrowser1);
             this.Name = "AdminPortal";
             this.Text = " ";
             this.ResumeLayout(false);
@@ -148,8 +139,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Label WelcomeBox;
         private System.Windows.Forms.Button RM;
         private System.Windows.Forms.Button eManagement;

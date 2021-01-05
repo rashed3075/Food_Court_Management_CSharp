@@ -49,7 +49,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(436, 46);
+            this.button2.Location = new System.Drawing.Point(449, 46);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 82);
             this.button2.TabIndex = 1;
