@@ -55,7 +55,7 @@ namespace Project.Models
             while (reader.Read())
             {
                 Review review = new Review();
-                review.RestaurantId = reader.GetString(reader.GetOrdinal("RestId"));
+                review.RestaurantId = reader.GetString(reader.GetOrdinal("RestaurantId"));
                 review.RestaurantReview = reader.GetString(reader.GetOrdinal("RestaurantReview"));
                 reviews.Add(review);
             }

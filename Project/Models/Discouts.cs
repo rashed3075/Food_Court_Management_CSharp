@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -56,6 +57,26 @@ namespace Project.Models
             conn.Close();
             return discount;
         }
-        
+        public ArrayList GetAllDiscount()
+        {
+            ArrayList discounts = new ArrayList();
+            conn.Open();
+            string query = "Select * FROM DiscountHistory";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Discount discount = new Discount();
+                discount.DiscountId = reader.GetInt32(reader.GetOrdinal("DiscountId"));
+                discount.FoodId = reader.GetString(reader.GetOrdinal("FoodId"));
+                discount.Amount = reader.GetInt32(reader.GetOrdinal("Amount"));
+                discount.DNAme = reader.GetString(reader.GetOrdinal("DName"));
+                discounts.Add(discount);
+            }
+
+            conn.Close();
+            return discounts;
+        }
+
     }
 }

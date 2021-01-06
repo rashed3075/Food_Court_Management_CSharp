@@ -1,5 +1,6 @@
 ﻿using Project.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,10 @@ namespace Project.Controllers
         public static Discount GetDiscount(string id)
         {
             return db.Discouts.GetDiscount(id);
+        }
+        public static ArrayList GetAllDiscount()
+        {
+            return db.Discouts.GetAllDiscount();
         }
     }
 }

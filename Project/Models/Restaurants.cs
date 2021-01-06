@@ -63,7 +63,7 @@ namespace Project.Models
             conn.Close();
             return restaurant;
         }
-        public ArrayList GetAllRestaurant()
+         public ArrayList GetAllRestaurant()
         {
             ArrayList restaurants = new ArrayList();
             conn.Open();
