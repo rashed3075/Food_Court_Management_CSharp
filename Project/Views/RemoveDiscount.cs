@@ -29,6 +29,7 @@ namespace Project.Views
             var DiscountResult = DiscountController.DeleteDiscount(FoodId);
             if (DiscountResult)
             {
+                MessageBox.Show("Remove Discount Successfully");
                 var foodResult = FoodController.GetFood(FoodId);
                 var DiscountResult1 = DiscountController.GetDiscount(FoodId);
                 int a = foodResult.Price + DiscountResult1.Amount;

@@ -31,7 +31,6 @@
             this.cManagement = new System.Windows.Forms.Button();
             this.addDiscount = new System.Windows.Forms.Button();
             this.editDiscount = new System.Windows.Forms.Button();
-            this.removeDiscount = new System.Windows.Forms.Button();
             this.deliverOrder = new System.Windows.Forms.Button();
             this.WelcomeBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -50,7 +49,7 @@
             // addDiscount
             // 
             this.addDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.addDiscount.Location = new System.Drawing.Point(344, 225);
+            this.addDiscount.Location = new System.Drawing.Point(534, 336);
             this.addDiscount.Name = "addDiscount";
             this.addDiscount.Size = new System.Drawing.Size(114, 72);
             this.addDiscount.TabIndex = 5;
@@ -61,24 +60,13 @@
             // editDiscount
             // 
             this.editDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.editDiscount.Location = new System.Drawing.Point(142, 362);
+            this.editDiscount.Location = new System.Drawing.Point(142, 336);
             this.editDiscount.Name = "editDiscount";
             this.editDiscount.Size = new System.Drawing.Size(114, 72);
             this.editDiscount.TabIndex = 6;
             this.editDiscount.Text = "Log out";
             this.editDiscount.UseVisualStyleBackColor = false;
             this.editDiscount.Click += new System.EventHandler(this.editDiscount_Click);
-            // 
-            // removeDiscount
-            // 
-            this.removeDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.removeDiscount.Location = new System.Drawing.Point(534, 362);
-            this.removeDiscount.Name = "removeDiscount";
-            this.removeDiscount.Size = new System.Drawing.Size(114, 72);
-            this.removeDiscount.TabIndex = 7;
-            this.removeDiscount.Text = "Remove Discount";
-            this.removeDiscount.UseVisualStyleBackColor = false;
-            this.removeDiscount.Click += new System.EventHandler(this.removeDiscount_Click);
             // 
             // deliverOrder
             // 
@@ -110,7 +98,6 @@
             this.ClientSize = new System.Drawing.Size(798, 517);
             this.Controls.Add(this.WelcomeBox);
             this.Controls.Add(this.deliverOrder);
-            this.Controls.Add(this.removeDiscount);
             this.Controls.Add(this.editDiscount);
             this.Controls.Add(this.addDiscount);
             this.Controls.Add(this.cManagement);
@@ -126,7 +113,6 @@
         private System.Windows.Forms.Button cManagement;
         private System.Windows.Forms.Button addDiscount;
         private System.Windows.Forms.Button editDiscount;
-        private System.Windows.Forms.Button removeDiscount;
         private System.Windows.Forms.Button deliverOrder;
         private System.Windows.Forms.Label WelcomeBox;
     }

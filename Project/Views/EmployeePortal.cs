@@ -43,7 +43,7 @@ namespace Project.Views
 
         private void removeDiscount_Click(object sender, EventArgs e)
         {
-            new RemoveDiscount().Show();
+            
         }
     }
 }
