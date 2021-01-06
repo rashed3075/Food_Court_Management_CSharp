@@ -26,7 +26,24 @@ namespace Project.Views
 
         private void addDiscount_Click(object sender, EventArgs e)
         {
+            new AddingDiscount().Show();
+        }
 
+        private void deliverOrder_Click(object sender, EventArgs e)
+        {
+            new OrderHistory().Show();
+        }
+
+        private void editDiscount_Click(object sender, EventArgs e)
+        {
+            LoginInfo li = new LoginInfo();
+            this.Visible = false;
+            li.Visible = true;
+        }
+
+        private void removeDiscount_Click(object sender, EventArgs e)
+        {
+            new RemoveDiscount().Show();
         }
     }
 }

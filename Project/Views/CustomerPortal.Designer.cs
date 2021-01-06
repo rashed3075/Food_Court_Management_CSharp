@@ -31,9 +31,9 @@
             this.btnFoodMenu = new System.Windows.Forms.Button();
             this.btnRestaurants = new System.Windows.Forms.Button();
             this.btnPlaceOrder = new System.Windows.Forms.Button();
-            this.btnReview = new System.Windows.Forms.Button();
             this.WelcomeBox = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFoodMenu
@@ -61,23 +61,13 @@
             // btnPlaceOrder
             // 
             this.btnPlaceOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnPlaceOrder.Location = new System.Drawing.Point(305, 63);
+            this.btnPlaceOrder.Location = new System.Drawing.Point(288, 64);
             this.btnPlaceOrder.Name = "btnPlaceOrder";
             this.btnPlaceOrder.Size = new System.Drawing.Size(114, 72);
             this.btnPlaceOrder.TabIndex = 7;
             this.btnPlaceOrder.Text = "Order Now";
             this.btnPlaceOrder.UseVisualStyleBackColor = false;
             this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
-            // 
-            // btnReview
-            // 
-            this.btnReview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnReview.Location = new System.Drawing.Point(463, 283);
-            this.btnReview.Name = "btnReview";
-            this.btnReview.Size = new System.Drawing.Size(114, 72);
-            this.btnReview.TabIndex = 9;
-            this.btnReview.Text = "Make Review";
-            this.btnReview.UseVisualStyleBackColor = false;
             // 
             // WelcomeBox
             // 
@@ -98,6 +88,18 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Log out";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.Location = new System.Drawing.Point(466, 276);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 72);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Make Review";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // CustomerPortal
             // 
@@ -106,9 +108,9 @@
             this.BackgroundImage = global::Project.Properties.Resources.images;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 475);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.WelcomeBox);
-            this.Controls.Add(this.btnReview);
             this.Controls.Add(this.btnPlaceOrder);
             this.Controls.Add(this.btnRestaurants);
             this.Controls.Add(this.btnFoodMenu);
@@ -125,8 +127,8 @@
         private System.Windows.Forms.Button btnFoodMenu;
         private System.Windows.Forms.Button btnRestaurants;
         private System.Windows.Forms.Button btnPlaceOrder;
-        private System.Windows.Forms.Button btnReview;
         private System.Windows.Forms.Label WelcomeBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

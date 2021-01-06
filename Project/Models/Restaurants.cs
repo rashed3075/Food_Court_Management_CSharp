@@ -82,7 +82,6 @@ namespace Project.Models
             conn.Close();
             return restaurants;
         }
-       
 
     }
 }

@@ -65,8 +65,9 @@
             this.editDiscount.Name = "editDiscount";
             this.editDiscount.Size = new System.Drawing.Size(114, 72);
             this.editDiscount.TabIndex = 6;
-            this.editDiscount.Text = "Edit Discount";
+            this.editDiscount.Text = "Log out";
             this.editDiscount.UseVisualStyleBackColor = false;
+            this.editDiscount.Click += new System.EventHandler(this.editDiscount_Click);
             // 
             // removeDiscount
             // 
@@ -77,6 +78,7 @@
             this.removeDiscount.TabIndex = 7;
             this.removeDiscount.Text = "Remove Discount";
             this.removeDiscount.UseVisualStyleBackColor = false;
+            this.removeDiscount.Click += new System.EventHandler(this.removeDiscount_Click);
             // 
             // deliverOrder
             // 
@@ -85,14 +87,15 @@
             this.deliverOrder.Name = "deliverOrder";
             this.deliverOrder.Size = new System.Drawing.Size(114, 72);
             this.deliverOrder.TabIndex = 8;
-            this.deliverOrder.Text = "Deliver Order";
+            this.deliverOrder.Text = "Order History";
             this.deliverOrder.UseVisualStyleBackColor = false;
+            this.deliverOrder.Click += new System.EventHandler(this.deliverOrder_Click);
             // 
             // WelcomeBox
             // 
             this.WelcomeBox.AutoSize = true;
             this.WelcomeBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeBox.Location = new System.Drawing.Point(452, 9);
+            this.WelcomeBox.Location = new System.Drawing.Point(442, 9);
             this.WelcomeBox.Name = "WelcomeBox";
             this.WelcomeBox.Size = new System.Drawing.Size(344, 29);
             this.WelcomeBox.TabIndex = 9;
@@ -104,7 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project.Properties.Resources.tech_background_image_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(817, 517);
+            this.ClientSize = new System.Drawing.Size(798, 517);
             this.Controls.Add(this.WelcomeBox);
             this.Controls.Add(this.deliverOrder);
             this.Controls.Add(this.removeDiscount);

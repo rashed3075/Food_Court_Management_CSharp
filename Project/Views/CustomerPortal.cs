@@ -43,5 +43,20 @@ namespace Project.Views
         {
             new RestaurantList().Show();
         }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginInfo li = new LoginInfo();
+            this.Visible = false;
+            li.Visible = true;
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new ReviewRestaurant().Show();
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace Project.Models
         public bool AddFood(Food food)
         {
             conn.Open();
-            Restaurant restaurant = new Restaurant();
+            
             string query = String.Format("INSERT INTO FoodItem VALUES('{0}','{1}','{2}','{3}','{4}')", food.Id, food.Name, food.Quantity, food.Price,food.RestId);
             SqlCommand cmd = new SqlCommand(query, conn);
             int result = cmd.ExecuteNonQuery();
@@ -94,6 +94,17 @@ namespace Project.Models
         {
             conn.Open();
             string query = String.Format("UPDATE FoodItem SET Quantity='{0}' WHERE Id='{1}'", food.Quantity, food.Id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;
+        }
+
+        public bool UpdateFood2(Food food)
+        {
+            conn.Open();
+            string query = String.Format("UPDATE FoodItem SET Price='{0}' WHERE Id='{1}'", food.Price, food.Id);
             SqlCommand cmd = new SqlCommand(query, conn);
             int r = cmd.ExecuteNonQuery();
             conn.Close();

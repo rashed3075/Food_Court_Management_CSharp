@@ -42,6 +42,7 @@ namespace Project.Views
             var food = new
             {
                 Id = tbId.Text,
+                Name = tbName.Text,
                 Quantity=Convert.ToInt32(tbQuantity.Text),
                 Price=Convert.ToInt32(tbPrice.Text)
             };

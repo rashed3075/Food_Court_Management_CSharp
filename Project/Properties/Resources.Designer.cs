@@ -83,9 +83,29 @@ namespace Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundcheck {
+            get {
+                object obj = ResourceManager.GetObject("backgroundcheck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap beige_restaurant_background_vector_1878159 {
             get {
                 object obj = ResourceManager.GetObject("beige-restaurant-background-vector-1878159", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap discount_background_sale_vector_9280811 {
+            get {
+                object obj = ResourceManager.GetObject("discount-background-sale-vector-9280811", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
