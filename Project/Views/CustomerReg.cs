@@ -39,5 +39,10 @@ namespace Project.Views
                 MessageBox.Show("Could not Add Customer", "Invalid Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void CustomerReg_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

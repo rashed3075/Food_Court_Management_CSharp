@@ -219,6 +219,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CustomerReg";
             this.Text = "CustomerReg";
+            this.Load += new System.EventHandler(this.CustomerReg_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
