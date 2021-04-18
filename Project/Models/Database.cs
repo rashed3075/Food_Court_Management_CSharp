@@ -21,8 +21,8 @@ namespace Project.Models
         {
 
 
-           // string Nijhum = @"Server=LAPTOP-2U5ORHDR\SQLEXPRESS1;Database=Project;User Id=sa;Password=database;";
-            string Rabby = @"Server=RABBY-PC\SQLEXPRESS;Database=Project;User Id=sa;Password=1234;";
+            string Nijhum = @"Server=LAPTOP-2U5ORHDR\SQLEXPRESS1;Database=Project;User Id=sa;Password=database;";
+           // string Rabby = @"Server=RABBY-PC\SQLEXPRESS;Database=Project;User Id=sa;Password=1234;";
            // string Maliha = @"Server=103.148.99.54\SQLEXPRESS;Database=Project;User Id=sa;Password=78787878ml.;";
             SqlConnection conn = new SqlConnection(Rabby);
 

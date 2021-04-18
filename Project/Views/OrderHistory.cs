@@ -24,5 +24,10 @@ namespace Project.Views
         {
 
         }
+
+        private void OrderHistory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

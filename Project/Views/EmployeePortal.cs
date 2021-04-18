@@ -45,5 +45,10 @@ namespace Project.Views
         {
             
         }
+
+        private void EmployeePortal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
